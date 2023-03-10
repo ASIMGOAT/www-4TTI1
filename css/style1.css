@@ -1,0 +1,282 @@
+﻿display:grid; 
+}
+
+/* les enfants se superposent */
+.a-img-txt>*{
+  grid-area:1/1/-1/-1; 
+  /* raccourci pour grid-row et grid-column */
+}
+.a-img{
+  filter:invert(1);
+}
+/* le texte */
+.a-txt{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:#fff;
+  opacity:0;
+  filter:invert(0); /* antibug si effet sur a-img */
+  transition:opacity .8s;
+}
+
+/* les couleurs c1 et c2 */
+.c1{
+    background:#ff6600cc; /* avec alpha */
+}
+
+.c2{
+    background:#6600ffcc; /* avec alpha */
+}
+
+/* le survol */
+.a-txt:hover{
+  opacity:1;
+}
+.a-img-txt:hover .a-img{
+  filter:invert(0);
+}
+/* la déco */
+body{
+  background:#222;
+  margin:24px;
+  font-family:sans-serif;
+  font-size:21px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap:24px;
+  gap:24px;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+a{
+  text-decoration:none;
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’), url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(‘/fonts/Roboto-Regular.woff2’) format(‘woff2’), url(‘/fonts/Robot-Regular.ttf’) format(‘truetype’)
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url(‘/fonts/Roboto-Bold.woff2’) format(‘woff2’), url(‘/fonts/Robot-Bold.ttf’) format(‘truetype’)
+}
+
+
+
+#exciting {
+    background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+}
+
+    #exciting:before {
+        content: "ℹ️";
+        margin-right: 5px;
+    }
+
+
+
+
+header {
+    background-color: orangered;
+    height: 100px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: darkorange;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background-color: darkorange;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+footer {
+    background-color: orangered;
+    height: 70px;
+    margin-top: auto;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: orangered;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+
+p {
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+img {
+    width: 280px;
+    height: auto;
+}
+
+
+
+
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+li {
+ margin-left:2px;
+ float:left; /*pour IE*/
+ }
+ul li a {
+ display:block;
+ float:left;   
+ width:100px;
+ background-color:#6495ED;
+ color:black;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ /*pour avoir un effet "outset" avec IE :*/
+ border-color:#white #white #white #white;
+ }
+ul li a:hover {
+ background-color:#white;
+ border-color:#white #white #white #;
+ }
+
+
+
+.navigation ul li .activ {
+    background-color: black;
+    color: white;
+}
+
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 70%;
+    border: 1px solid white;
+    background-color: lightcoral;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.card {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+    ul li a {
+        color: white;
+        font-size: larger;
+    }
+
+.flex {
+    display: flex;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.blocImageBien {
+    height: 300px;
+    align-items: center;
+}
+
+.imageIcon {
+    width: 30px;
+}
+
+
+th {
+    background-color: aqua;
+}
+
+.blocGauche {
+    width: 300px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+
+
+
+
